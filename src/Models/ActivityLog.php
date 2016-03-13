@@ -28,16 +28,6 @@ class ActivityLog extends Eloquent
     protected $table = 'activity_log';
 
     /**
-     * Get the user that the activity belongs to.
-     *
-     * @return object
-     */
-    public function user()
-    {
-        return $this->belongsTo(config('auth.providers.users.model'), 'user_id');
-    }
-
-    /**
      * Create an activity log entry.
      *
      * @param  mixed $data
@@ -72,5 +62,15 @@ class ActivityLog extends Eloquent
         $activityLog->save();
 
         return true;
+    }
+
+    /**
+     * Get the user that the activity belongs to.
+     *
+     * @return object
+     */
+    public function user()
+    {
+        return $this->belongsTo(config('auth.model'), 'user_id');
     }
 }
