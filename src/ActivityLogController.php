@@ -8,7 +8,6 @@ class ActivityLogController extends Controller
 {
     public function index()
     {
-        echo "hola";
-    }
 
+    }
 }
