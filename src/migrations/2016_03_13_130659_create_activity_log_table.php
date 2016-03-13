@@ -19,7 +19,7 @@ class CreateActivityLogTable extends Migration
             $table->integer('user_id')->nullable();
             $table->integer('content_id')->nullable();
             $table->string('content_type', 72)->nullable();
-            $table->string('action', 32)->nullable();
+            $table->string('action', 50)->nullable();
             $table->string('description')->nullable();
             $table->text('details')->nullable();
             $table->string('ip_address', 64);
