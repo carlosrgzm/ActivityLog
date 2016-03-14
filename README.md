@@ -1,11 +1,5 @@
 # ActivityLog
-Register all user's information in your Laravel 5 application.
-
-[Under development]
-
-# TODOS:
-- Documentation
-- UTs
+Register all user's information in your Laravel 5 application. (Under development)
 
 [![Latest Stable Version](https://poser.pugx.org/carlosrgzm/activity-log/v/stable)](https://packagist.org/packages/carlosrgzm/activity-log)
 [![Total Downloads](https://poser.pugx.org/carlosrgzm/activity-log/downloads)](https://packagist.org/packages/carlosrgzm/activity-log) 
@@ -41,3 +35,7 @@ For using this package you can add this code in your templates
 
 `ActivityLog::log($data)`
 
+
+# TODOS:
+- Improve Documentation
+- UTs
