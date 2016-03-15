@@ -35,6 +35,8 @@ For using this package you can add this code in your templates
 
 `ActivityLog::log($data)`
 
+** (As soon as I can, I'll put here an example of $data array)
+
 
 # TODOS:
 - Improve Documentation
