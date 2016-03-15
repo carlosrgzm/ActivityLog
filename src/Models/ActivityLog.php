@@ -44,9 +44,7 @@ class ActivityLog extends Eloquent
         if (config('activitylog.auto_set_user_id')) {
             $user = call_user_func(config('activitylog.auth_method'));
             $activityLog->user_id = isset($user->id) ? $user->id : null;
-        }
-
-        if (isset($data['userId'])) {
+        } else if (isset($data['userId'])) {
             $activityLog->user_id = $data['userId'];
         }
 
@@ -56,7 +54,6 @@ class ActivityLog extends Eloquent
         $activityLog->description = isset($data['description']) ? $data['description'] : null;
         $activityLog->details = isset($data['details']) ? $data['details'] : null;
 
-        //set developer flag
         $activityLog->ip_address = Request::getClientIp();
         $activityLog->user_agent = isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : 'No UserAgent';
         $activityLog->save();

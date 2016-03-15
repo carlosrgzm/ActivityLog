@@ -35,8 +35,16 @@ For using this package you can add this code in your templates
 
 `ActivityLog::log($data)`
 
-** (As soon as I can, I'll put here an example of $data array)
+The values for the $data array are:
 
+ `$data = [
+            'user_id' => '',
+            'content_id' => '',
+            'content_type' => '',
+            'action' => '',
+            'description' => '',
+            'details' => ''
+          ];`
 
 # TODOS:
 - Improve Documentation
