@@ -47,11 +47,6 @@ class ActivityLogData
  */
 class ActivityLog extends Eloquent
 {
-    const ACTION_LIST = 'list';
-    const ACTION_INSERT = 'insert';
-    const ACTION_UPDATE = 'update';
-    const ACTION_DELETE = 'delete';
-
     /**
      * The database table used by the model.
      *
