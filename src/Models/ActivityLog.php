@@ -28,6 +28,9 @@ class ActivityLogData
         $this->contentId = $contentId;
         $this->contentType = $contentType;
         $this->action = $action;
+        if (is_array($details)) {
+            $details = json_encode($details);
+        }
         $this->details = $details;
     }
 }
