@@ -40,6 +40,7 @@ class ActivityLogData
  * @property string content_type
  * @property string action
  * @property string details
+ * @property string url
  */
 class ActivityLog extends Eloquent
 {
