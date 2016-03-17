@@ -10,7 +10,7 @@ Register all user's information in your Laravel 5 application. (Under developmen
 
 1. Add `carlosrgzm/activity-log` to `composer.json`.
 
- > "carlosrgzm/activity-log": "dev-master"
+ > "carlosrgzm/activity-log": "1.0.*"
 
 2. Run composer update to pull down the latest version.
 
