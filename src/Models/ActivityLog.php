@@ -10,14 +10,12 @@ class ActivityLogData
     public $contentId = null;
     public $contentType = null;
     public $action = null;
-    public $url = null;
     public $details = null;
 
     public function __construct(
-        $contentType = null,
         $action = null,
+        $contentType = null,
         $contentId = null,
-        $url = null,
         $details = null,
         $userId = null)
     {
@@ -30,7 +28,6 @@ class ActivityLogData
         $this->contentId = $contentId;
         $this->contentType = $contentType;
         $this->action = $action;
-        $this->url = $url;
         $this->details = $details;
     }
 }
@@ -42,7 +39,6 @@ class ActivityLogData
  * @property int content_id
  * @property string content_type
  * @property string action
- * @property string url
  * @property string details
  */
 class ActivityLog extends Eloquent
@@ -81,8 +77,8 @@ class ActivityLog extends Eloquent
         $activityLog->content_id = $data->contentId;
         $activityLog->content_type = $data->contentType;
         $activityLog->action = $data->action;
-        $activityLog->url = $data->url;
         $activityLog->details = $data->details;
+        $activityLog->url = Request::url();
         $activityLog->ip_address = Request::getClientIp();
         $activityLog->user_agent = isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : 'No UserAgent';
         $activityLog->save();
