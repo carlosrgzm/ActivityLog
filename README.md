@@ -33,9 +33,11 @@ Run `php artisan vendor:publish` to generate the migrations and the configuratio
 
 For using this package you can add this code in your templates
 
->  '$act = new ActivityLog;
- $data = new ActivityLogData($action, $contentType, $contentId, $details, $userId);
- $act->log($data);
+> $act = new ActivityLog;
+
+> $data = new ActivityLogData($action, $contentType, $contentId, $details, $userId);
+ 
+> $act->log($data);
  
 
 All params for ActivityLogData() are optional. 
