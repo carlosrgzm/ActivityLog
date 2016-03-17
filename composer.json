@@ -1,6 +1,6 @@
 {
   "name": "carlosrgzm/activity-log",
-  "description": "Register all user's information in your Laravel application",
+  "description": "Register all user's information in your Laravel 5 application",
   "require": {
     "php": ">=5.4.0",
     "laravel/framework": "5.*"
