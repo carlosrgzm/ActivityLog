@@ -33,19 +33,13 @@ Run `php artisan vendor:publish` to generate the migrations and the configuratio
 
 For using this package you can add this code in your templates
 
-`ActivityLog::log($data)`
+`$act = new ActivityLog;
+ $data = new ActivityLogData($action, $contentType, $contentId, $details, $userId); 
+ $act->log($data);
+`
 
-The values for the $data array are:
-
- `$data = [
-            'user_id' => '',
-            'content_id' => '',
-            'content_type' => '',
-            'action' => '',
-            'description' => '',
-            'details' => ''
-          ];`
+All params for ActivityLogData() are optional. 
+The 'user_id' is automatically set to the current user if you have 'auto_set_user_id' => true in your activitylog.php config file.  
 
 # TODOS:
-- Improve Documentation
 - UTs
