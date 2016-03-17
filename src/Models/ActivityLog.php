@@ -13,7 +13,7 @@ class ActivityLogData
     public $details = null;
 
     public function __construct(
-        $action = null,
+        $action,
         $contentType = null,
         $contentId = null,
         $details = null,
