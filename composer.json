@@ -17,7 +17,7 @@
     }
   ],
   "minimum-stability": "stable",
-  "version": "v1.0.2",
+  "version": "v1.0.6",
   "autoload": {
     "psr-4": {
       "App\\": "app/",
