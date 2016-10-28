@@ -41,5 +41,7 @@ For using this package you can add this code in your templates
  
 
 All params for ActivityLogData() are optional. 
-The 'user_id' is automatically set to the current user if you have 'auto_set_user_id' => true in your activitylog.php config file.  
+The 'user_id' is automatically set to the current user if you have 'auto_set_user_id' => true in your activitylog.php config file.
+  
+You must review the config/activitylog.php to be sure all params are correct.
 
