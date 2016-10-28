@@ -93,6 +93,6 @@ class ActivityLog extends Eloquent
      */
     public function user()
     {
-        return $this->belongsTo(config('auth.model'), 'user_id');
+        return $this->belongsTo(config('activitylog.user_model'), 'user_id');
     }
 }
