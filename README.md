@@ -45,5 +45,3 @@ The 'user_id' is automatically set to the current user if you have 'auto_set_use
   
 You should review the _config/activitylog.php_ to be sure all params are correct.
 
-
-
